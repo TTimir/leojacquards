@@ -31,7 +31,7 @@
 
 
 </head>
-<body>
+<body style="scroll-behavior: smooth;">
 
     <!--==================================================================== 
 							Start Loading Screen
@@ -190,8 +190,6 @@
                               <li><a href='why-choose-us.html'>Why Choose Us</a></li>
                               <li><a href='our-gallery.html'>Our Gallery</a></li>
                               <li><a href='faq.html'>Help & FAQs</a></li>
-                              <li><a href='request-quote.html'>Request Quote</a></li>
-
                             </ul>
 
                         </li>
@@ -207,10 +205,9 @@
 
                             <ul class="sub-menu">
 
-                                <li><a href='services-three.html'>Electronic Jacquard</a></li>
-                              <li><a href='services-three.html'>PL Series</a></li>
-                              <li><a href='services-three.html'>HL Series</a></li>
-                              <li><a href='services-three.html'>Jumbo Series</a></li>
+                                <li><a href='#!'>Electronic Jacquard</a></li>
+                              <li><a href='services-single.html'>PL Series</a></li>
+                              <li><a href='services-single.html'>HL Series</a></li>
 
                             </ul>
 
@@ -263,7 +260,7 @@
             <p>We focus on practical, effective strategies that help you achieve your goals and turn your dreams into reality, all while driving success and growth.</p>
             
             <!-- Btn Two -->
-            <a href="#" class="main-btn-two mt-30">
+            <a href="#quote" class="main-btn-two mt-30">
                 <div class="text-btn">
                     <span class="text-btn-one">Request a Quote</span>
                     <span class="text-btn-two">Request a Quote</span>
@@ -680,7 +677,7 @@
  <!--==================================================================== 
 							Start Statistics
 	=====================================================================-->
-<div class="statistics pt-120">
+<div class="statistics pt-120" id="quote">
     <div class="overlay"></div>
     <div class="container">
         
@@ -772,7 +769,7 @@
             </div>
             </div>
             <div class="col-lg-6 no-padding">
-                <form>
+                <form action="https://formspree.io/f/mkggdalg" method="post">
                 <div class="row">
                     <div class="col-sm-6">
                         <input type="text" id="name" class="form-control" name="name" placeholder="Name">
@@ -791,31 +788,24 @@
                     
                     <div class="col-sm-6">     
                         <select name="subject" title="subject" class="chosen-select" tabindex="1">
-                                <option>Business Planning</option>
-                                <option>Career</option>
-                                <option>Business Growth</option>
-                                <option>Trade</option>
+                                <option>Jacquard Enquire</option>
+                                <option>Jacquard Quote</option>
                         </select>
                     </div>
                     
                      <div class="col-md-12">
                         <div class="form-group">
-                            <textarea placeholder="Your Message Here "></textarea>
+                            <textarea name="message" placeholder="Your Message Here "></textarea>
                         </div>
                     </div>
                     
                     <div class="col-lg-6">
-                        <!-- Btn Two -->
-                        <a href="#" class="main-btn-four">
+                        <div class="main-btn-two">
                             <div class="text-btn">
-                                <span class="text-btn-one">Submet Request</span>
-                                <span class="text-btn-two">Submet Request</span>
+                                <button type="submit" class="text-btn-one" style="background: none; border: none; padding: 0; font: inherit; color: inherit; cursor: pointer;">Send Message</button>
+                                <button type="submit" class="text-btn-two" style="background: none; border: none; padding: 0; font: inherit; color: inherit; cursor: pointer;">Send Message</button>
                             </div>
-                            <div class="arrow-btn">
-                                <span class="arrow-one"><i class="fa fa-envelope"></i></span>
-                                <span class="arrow-two"><i class="fa fa-envelope"></i></span>
-                            </div>
-                        </a> 
+                        </div>
                      
                     </div>
                     
@@ -1396,13 +1386,7 @@
                                 </li>
 
                                
-
-                                <li>
-                                    <a href='services-three.html'>
-                                        <span><i class="fas fa-angle-right"></i></span> Our Products
-                                    </a>
-                                </li>
-
+                                
                                 <li>
                                     <a href='contact-us.html'>
                                         <span><i class="fas fa-angle-right"></i></span> Contact Us
@@ -1430,23 +1414,18 @@
                     <div class="col-6">
                         <ul class="footer-link mb-0">
                             <li>
-                                <a href='about-us.html'>
+                                <a href='services-PL.html'>
                                     <span><i class="fas fa-angle-right"></i></span> Electronic Jacquard
                                 </a>
                             </li>
                             <li>
-                                <a href='why-choose-us.html'>
+                                <a href='services-PL.html'>
                                     <span><i class="fas fa-angle-right"></i></span> PL Series
                                 </a>
                             </li>
                             <li>
-                                <a href='our-gallery.html'>
+                                <a href='services-HL.html'>
                                     <span><i class="fas fa-angle-right"></i></span> HL Series
-                                </a>
-                            </li>
-                            <li>
-                                <a href='case-study-one.html'>
-                                    <span><i class="fas fa-angle-right"></i></span> Jumbo Series
                                 </a>
                             </li>
 
@@ -1455,7 +1434,7 @@
 
                     <!-- List Icons Social Media-->
                     <ul class="social-media">
-                       <li><a href="#" class="instagram"><i class="fab fa-whatsapp"></i></a></li> Get a Quote
+                       <li><a href="https://api.whatsapp.com/send?phone=919879196352&text=Hi" target="_blank" class="instagram"><i class="fab fa-whatsapp"></i></a></li> Get a Quote
                     </ul> 
 
 
