@@ -508,7 +508,7 @@ p {
 .section-title h3,
 .section-title-left h3 {
     color: #02185a;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 0px;
@@ -1405,7 +1405,7 @@ nav {
 }
 .my-logo {
     display: inline-block;
-    width: 130px;
+    width: 220px;
     padding: 24.5px 0;
 }
 
@@ -4310,7 +4310,7 @@ text-right {
 ----------------------------------------------------------------*/
 .work-process {
     width: 100%;
-    background-image: url(../images/header/vision-3.jpg);
+    background-image: url(../images/header/work-process-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     top: 0;
@@ -7736,6 +7736,22 @@ footer .copyright a {
     height: 100%;
     width: 100%;
 }
+
+/* Add responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .header-breadcrumb {
+        padding: 80px 0;
+        min-height: auto;
+        background-attachment: scroll;
+        background-position: right center !important; /* Show right side of image on mobile */
+    }
+    
+    .header-breadcrumb .page-title-heading {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
 .header-breadcrumb-two {
     padding: 40px 0;
     min-height: 100%;
