@@ -2043,7 +2043,7 @@ nav {
 .close-menu-sidebar {
     height: 100%;
     background: rgba(253, 253, 253, 0.95);
-    position: absolute;
+    position: fixed; /* Changed to fixed */
     left: 0;
     top: 0;
     z-index: 9998;
@@ -2051,15 +2051,28 @@ nav {
     opacity: 0;
     visibility: hidden;
     width: 0px;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
+    transition: width 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+
+    /* Flexbox properties for centering */
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
 }
+
 .close-menu-sidebar.open {
     width: 100%;
     opacity: 1;
-    visibility: inherit;
+    visibility: visible;
+}
+
+/* Styling the overlay image */
+.close-menu-sidebar .overlay-image {
+    max-width: 80%;
+    height: auto;
+    margin-right: 410px;
+    border-radius: 12px;    
+    filter: invert(1) grayscale(1) brightness(2);
+
 }
 
 .side-menu-btn{
