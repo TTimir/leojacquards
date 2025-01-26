@@ -411,7 +411,16 @@
 
 <div id="portfolio" class="portfolio portfolio-two pt-120 pb-320">
     <div class="container">
-
+        <div class="row">
+            <div class="col">
+                <div class="filter-group text-center">
+                    <ul id="control" class="list-control">
+                        <li class="active" data-filter="all">All</li>
+                        <li data-filter="2">Videos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div id="filtr-container" class="row g-4">
             <div class="col-sm-6 col-lg-4 filtr-item" data-category="1" data-sort="value">
                 <div class="case-item">
@@ -484,38 +493,94 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Add these video items after your existing gallery items -->
+             
+            <div class="col-sm-6 col-lg-4 filtr-item" data-category="2" data-sort="value">
+                <div class="case-item video-item">
+                    <div class="img-case">
+                        <video poster="assets/images/portfolio/portfolio-2/video-thumbnails/sifli.png">
+                            <source src="assets/videos/sifli.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Handle videos
-    document.querySelectorAll('.video-item').forEach(videoItem => {
-        const video = videoItem.querySelector('video');
-        const playButton = videoItem.querySelector('.play-button');
-
-        videoItem.addEventListener('click', function() {
-            // Open video in new tab
-            window.open(video.querySelector('source').src, '_blank');
+<style>
+    .video-item .img-case video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 4/3; /* This maintains a consistent aspect ratio */
+    }
+    
+    .video-item .img-case {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .play-button:hover {
+        background: rgba(255, 255, 255, 1);
+    }
+    
+    .play-button i {
+        font-size: 24px;
+        color: #333;
+    }
+    </style>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Handle videos
+        document.querySelectorAll('.video-item').forEach(videoItem => {
+            const video = videoItem.querySelector('video');
+            const playButton = videoItem.querySelector('.play-button');
+    
+            videoItem.addEventListener('click', function() {
+                // Open video in new tab
+                window.open(video.querySelector('source').src, '_blank');
+            });
+    
+            // Prevent video from starting to play when clicking play button
+            // (since we're opening in new tab instead)
+            playButton.addEventListener('click', function(e) {
+                e.stopPropagation();
+                window.open(video.querySelector('source').src, '_blank');
+            });
         });
-
-        // Prevent video from starting to play when clicking play button
-        // (since we're opening in new tab instead)
-        playButton.addEventListener('click', function(e) {
-            e.stopPropagation();
-            window.open(video.querySelector('source').src, '_blank');
+    
+        // Keep existing image handling
+        document.querySelectorAll('.case-item .img-case img').forEach(img => {
+            img.addEventListener('click', function() {
+                window.open(this.src, '_blank');
+            });
         });
     });
+    </script>
 
-    // Keep existing image handling
-    document.querySelectorAll('.case-item .img-case img').forEach(img => {
-        img.addEventListener('click', function() {
-            window.open(this.src, '_blank');
-        });
-    });
-});
-</script>
     <!--==================================================================== 
                                 End Section Portfolio 
     =====================================================================-->
@@ -612,12 +677,12 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </a>
                             </li>
                             <li>
-                                <a href='cnc-machinary.html'>
+                                <a href='services-CNC-Router.html'>
                                     <span><i class="fas fa-angle-right"></i></span> CNC Machinary
                                 </a>
                             </li>
                             <li>
-                                <a href='hot-fix-machine.html'>
+                                <a href='services-Hot-Fix.html'>
                                     <span><i class="fas fa-angle-right"></i></span> Hot Fix Machine
                                 </a>
                             </li>
