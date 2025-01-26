@@ -641,55 +641,52 @@
                 </div>
                 </div>
                 <div class="col-lg-6 no-padding">
-                    <form>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <input type="text" id="name" class="form-control" name="name" placeholder="Name">
-                        </div>
-                        
-                        <div class="col-sm-6">
-                            <input type="email" id="email" name="email" placeholder="Your Email">
-                        </div>
-                        
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input type="text" name="phone" placeholder="Your Phone Number">
+                    <form action="https://formspree.io/f/mkggdalg" method="post">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" id="name" class="form-control" name="name" placeholder="Name" required>
                             </div>
-    
-                        </div>
-                        
-                        <div class="col-sm-6">     
-                            <select name="subject" title="subject" class="chosen-select" tabindex="1">
-                                    <option>Business Planning</option>
-                                    <option>Career</option>
-                                    <option>Business Growth</option>
-                                    <option>Trade</option>
-                            </select>
-                        </div>
-                        
-                         <div class="col-md-12">
-                            <div class="form-group">
-                                <textarea placeholder="Your Message Here "></textarea>
+                            
+                            <div class="col-sm-6">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
                             </div>
-                        </div>
-                        
-                        <div class="col-lg-6">
-                            <!-- Btn Two -->
-                            <a href="#" class="main-btn-four">
-                                <div class="text-btn">
-                                    <span class="text-btn-one">Submet Request</span>
-                                    <span class="text-btn-two">Submet Request</span>
+                            
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" name="phone" placeholder="Your Phone Number" required>
                                 </div>
-                                <div class="arrow-btn">
-                                    <span class="arrow-one"><i class="fa fa-envelope"></i></span>
-                                    <span class="arrow-two"><i class="fa fa-envelope"></i></span>
+        
+                            </div>
+                            
+                            <div class="col-sm-6">     
+                                <select name="subject" title="subject" class="chosen-select" tabindex="1">
+                                        <option>Jacquard Enquire</option>
+                                        <option>Get Quote</option>
+                                </select>
+                            </div>
+                            
+                             <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Your Message Here " required></textarea>
                                 </div>
-                            </a> 
-                         
+                            </div>
+                            
+                            <div class="col-lg-8">
+                                <div class="main-btn-two">
+                                    <div class="text-btn">
+                                        <button type="submit" class="text-btn-one" style="background: none; border: none; padding: 0; font: inherit; color: inherit; cursor: pointer;">Send Message</button>
+                                        <button type="submit" class="text-btn-two" style="background: none; border: none; padding: 0; font: inherit; color: inherit; cursor: pointer;">Send Message</button>
+                                    </div>
+                                    <div class="arrow-btn">
+                                        <span class="arrow-one"><i class="fas fa-caret-right"></i></span>
+                                        <span class="arrow-two"><i class="fas fa-caret-right"></i></span>
+                                    </div>
+                                </div>
+                             
+                            </div>
+                            
                         </div>
-                        
-                    </div>
-                    </form>
+                        </form>
                 </div>
             </div>
             

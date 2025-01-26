@@ -718,16 +718,16 @@
                 <form action="https://formspree.io/f/mkggdalg" method="post">
                 <div class="row">
                     <div class="col-sm-6">
-                        <input type="text" id="name" class="form-control" name="name" placeholder="Name">
+                        <input type="text" id="name" class="form-control" name="name" placeholder="Name" required>
                     </div>
                     
                     <div class="col-sm-6">
-                        <input type="email" id="email" name="email" placeholder="Your Email">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
                     
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="text" name="phone" placeholder="Your Phone Number">
+                            <input type="text" name="phone" placeholder="Your Phone Number" required>
                         </div>
 
                     </div>
@@ -735,21 +735,25 @@
                     <div class="col-sm-6">     
                         <select name="subject" title="subject" class="chosen-select" tabindex="1">
                                 <option>Jacquard Enquire</option>
-                                <option>Jacquard Quote</option>
+                                <option>Get Quote</option>
                         </select>
                     </div>
                     
                      <div class="col-md-12">
                         <div class="form-group">
-                            <textarea name="message" placeholder="Your Message Here "></textarea>
+                            <textarea name="message" placeholder="Your Message Here " required></textarea>
                         </div>
                     </div>
                     
-                    <div class="col-lg-6">
+                    <div class="col-lg-8">
                         <div class="main-btn-two">
                             <div class="text-btn">
                                 <button type="submit" class="text-btn-one" style="background: none; border: none; padding: 0; font: inherit; color: inherit; cursor: pointer;">Send Message</button>
                                 <button type="submit" class="text-btn-two" style="background: none; border: none; padding: 0; font: inherit; color: inherit; cursor: pointer;">Send Message</button>
+                            </div>
+                            <div class="arrow-btn">
+                                <span class="arrow-one"><i class="fas fa-caret-right"></i></span>
+                                <span class="arrow-two"><i class="fas fa-caret-right"></i></span>
                             </div>
                         </div>
                      
@@ -951,7 +955,7 @@
    
             <div class="col-12 mt-20 text-center">
                 <span class="text-link">Innovative and Sustainable Solutions. </span>
-                <a class='btn-read-more' href='services-one.html'>
+                <a class='btn-read-more' href='why-choose-us.html'>
                     <div class="text-btn">Find your solution</div>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </a>
